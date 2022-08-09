@@ -45,7 +45,7 @@
 
         
 	<!-- footer 부분------------------------------------------------------------- -->
-	<tiles:insertAttribute name="footer" ignore="true"/>
+	<tiles:insertAttribute name="footer"/>
 <%-- 	<tiles:insertAttribute name="footer" ignore="true" /> --%>
 
 

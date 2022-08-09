@@ -1,10 +1,14 @@
 package com.dbellart.web.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.dbellart.web.domain.Board;
 import com.dbellart.web.domain.BoardMain;
@@ -21,9 +25,8 @@ public class BoardController {
 	public String qAndaPro(Board board) {
 		
 		boardService.addBoardInfo(board);
-	
-		
-		return "top/write";
+
+		return "top/notice";
 	}
 	
 	//ModelAndView랑 Model의 차이가 먼데
@@ -52,12 +55,16 @@ public class BoardController {
 //	}
 	
 	@RequestMapping("notice")
-	public String notice(Board board, Model model) {
+	public ModelAndView notice(Model model, int boardIdx) {
+		
+		List<Board> boards = boardService.appearQnaInfo(boardIdx);
+		model.addAttribute("boards", boards);
+		
+		return new ModelAndView("top/notice");
 
-		Board writeMain = boardService.showBoardInfo(board.getBoardIdx());
+		/*Board writeMain = boardService.showBoardInfo(board.getBoardIdx());
 		BoardMain boardMain = new BoardMain();
 		if(writeMain != null) {
-			boardMain.setBoardMainIdx(writeMain.getBoardIdx());
 			boardMain.setTitleMain(writeMain.getTitle());
 			boardMain.setContentMain(writeMain.getContent());
 		}
@@ -65,6 +72,6 @@ public class BoardController {
 		model.addAttribute("boardMain",boardMain);
 
 			return "top/notice";
-	}
+	}*/
 
 }

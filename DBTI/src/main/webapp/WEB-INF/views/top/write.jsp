@@ -8,12 +8,13 @@
 			style="max-width: 600px;">
 			<div
 				class="d-inline-block border rounded-pill text-primary px-4 mb-3">Q&A</div>
-			<h2 class="mb-5">Q&A를 남겨주시면 순차적으로 답변드리겠습니다.</h2>
+			<h2 class="mb-5">순차적으로 답변드리겠습니다</h2>
 		</div>
 
 		<div class="row justify-content-center">
 			<div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
 				<form action="/qAndaPro" method="POST">
+					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 					<div class="row g-3">
 						<div class="col-12">
 							<div class="form-floating">
@@ -35,9 +36,7 @@
 
 						
 						<div class="col-md-6">
-							<a href="top/notice">
-								<button class="btn btn-primary w-100 py-3">뒤로가기</button>
-							</a>
+							<button class="btn btn-primary w-100 py-3" onclick="location.href='/notice'">뒤로가기</button>
 						</div>
 						<div class="col-md-6">
 							<button class="btn btn-primary w-100 py-3" type="submit">작성완료</button>

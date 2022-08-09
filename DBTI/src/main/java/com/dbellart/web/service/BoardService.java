@@ -18,8 +18,8 @@ public class BoardService {
 		boardMapper.addBoardInfo(board);
 	}
 	
-	public Board showBoardInfo(int boardIdx) {
-		return boardMapper.showBoardInfo(boardIdx);
+	public List<Board> showBoardInfo(int boardIdx) {
+		return boardMapper.appearQnaInfo(boardIdx);
 	}
 
 }

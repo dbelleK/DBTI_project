@@ -33,5 +33,6 @@ create table board(
 select*from board;
 drop table board;
 select * from dbelle.board where boardIdx=2;
+select * from dbelle.board ORDER BY boardIdx;
 
 insert into dbelle.board (title, content) value ("안녕", "안녕1");

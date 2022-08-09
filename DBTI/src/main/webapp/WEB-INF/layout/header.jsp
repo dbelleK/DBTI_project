@@ -60,8 +60,10 @@
 					<div class="navbar-nav ms-auto py-0">
 						<a href="/" class="nav-item nav-link">Home</a>
 
-						<a href="/service" class="nav-item nav-link">시작</a>
-						<div class="nav-item dropdown">
+						<a href="/service" class="nav-item nav-link">Start</a>
+						<a href="/notice" class="nav-item nav-link">FAQ</a>
+						
+<!-- 						<div class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle"
 								data-bs-toggle="dropdown"></a>
 							<div class="dropdown-menu m-0">
@@ -69,8 +71,7 @@
 									class="dropdown-item">공지사항/Q&A</a>
 							</div>
 						</div>
-
-
+ -->
 
 						<div class="collapse navbar-collapse" id="navbarCollapse">
 						
@@ -91,18 +92,19 @@
 
 										<div class="dropdown-menu m-0">
 											<a href="/myPage" class="dropdown-item"> <i
-												class="fa-solid fa-user-astronaut"></i>마이페이지
-											</a> <a href="/cs/faq" class="dropdown-item"> <script
+												class="fa-solid fa-user-astronaut">&nbsp;</i>마이페이지
+											</a> 
+											<a href="/cs/faq" class="dropdown-item"> <script
 													src="https://kit.fontawesome.com/12fa0b1450.js"
-													crossorigin="anonymous"></script> &nbsp;<i
-												class="fa-solid fa-question"></i>나의 검사지
+													crossorigin="anonymous"></script> <i
+												class="fa-solid fa-question">&nbsp;</i>나의 검사지
 											</a>
 
 
 											<form name="logoutForm" method="post" action="/logout">
 												<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 												<button type="submit" class="dropdown-item">
-													<i class="fa-solid fa-arrow-right-to-bracket"></i>로그아웃
+													<i class="fa-solid fa-arrow-right-to-bracket">&nbsp;</i>로그아웃
 												</button>
 											</form>
 										</div>

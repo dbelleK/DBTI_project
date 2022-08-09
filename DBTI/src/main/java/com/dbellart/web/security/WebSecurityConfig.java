@@ -52,7 +52,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("email") // ���̵� �Ķ���͸� ����
                 .passwordParameter("pw") //�н����� �Ķ���͸� ����
                 .loginProcessingUrl("/loginProcess")// loginProcessingUrl - POST�� �α��� ������ ���� �� ���
-//                .defaultSuccessUrl("/home") // ������ ������ ������
+//                .defaultSuccessUrl("/") // ������ ������ ������
                 .failureHandler(new CustomLoginFailureHandler())
                 .successHandler(handler)
 
