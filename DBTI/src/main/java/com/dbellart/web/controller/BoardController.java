@@ -61,6 +61,7 @@ public class BoardController {
 		model.addAttribute("boards", boards);
 		
 		return new ModelAndView("top/notice");
+	}
 
 		/*Board writeMain = boardService.showBoardInfo(board.getBoardIdx());
 		BoardMain boardMain = new BoardMain();

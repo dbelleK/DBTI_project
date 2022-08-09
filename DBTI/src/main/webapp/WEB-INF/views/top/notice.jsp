@@ -158,15 +158,15 @@ a:hover {
 					</h6>
                 </div>
                 
-               <c:forEach var='obj' items="${boardMain}">
+               <c:forEach var='obj' items="${boards}">
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>${obj.contentMain}</p>
+                        <p>${obj.content}</p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg">
                             <div class="ps-3">
-                                <h6 class="mb-1">${obj.titleMain}</h6>
+                                <h6 class="mb-1">${obj.title}</h6>
                                 <small>Profession</small>
                             </div>
                         </div>
