@@ -37,7 +37,7 @@
 			<div
 				class="d-inline-block border rounded-pill text-primary px-4 mb-3">Let's
 				JOIN</div>
-			<h2 class="mb-5">Join</h2>
+			<h2 class="mb-5">Join/h2>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">

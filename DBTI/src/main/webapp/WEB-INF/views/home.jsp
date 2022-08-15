@@ -99,12 +99,12 @@ body {
     .container-xxl {
         max-width: 2000px  !important;
     }   */ 
-    
- @media (min-width: 1400px){
+  
+/* /*  @media (min-width: 1400px){
     .container-xxls {
         max-width: 1320px  !important;
         margin-left: 300px;
-    }   
+    }  */ */  
 }
 </style>
 
