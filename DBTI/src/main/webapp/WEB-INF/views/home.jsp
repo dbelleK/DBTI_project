@@ -109,6 +109,7 @@ body {
 </style>
 
 <link href="/resources/css/whole.css" rel="stylesheet">
+<script type="text/javascript" src="/resources/js/start.js"></script>
 
 <!-- <head>
     <meta charset="utf-8">
@@ -201,7 +202,7 @@ body {
         <!-- Navbar & Hero End -->
        
 
-         <button class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" style=" margin-left: 850px;">
+         <button class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" style=" margin-left: 850px;" onclick="js:begin()">
            <span>검사 시작하기</span>
          </button>
 <!-- ---------------------------<body>--------------------------------------- -->
@@ -315,3 +316,4 @@ body {
 </body> -->
 
 </html>
+    
