@@ -228,7 +228,7 @@ body {
         </div>
         <!-- Newsletter End -->
 
-
+<script type="text/javascript" src="../js/start.js"></script>
    
 <!-- ---------------------------<footer>--------------------------------------- -->
 <!--         Footer Start
